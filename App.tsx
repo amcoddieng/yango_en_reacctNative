@@ -1,20 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet,ScrollView, Text,Image, View } from 'react-native';
+import Plan1 from './composant/plan1';
+import Plan_service from './composant/plan_service';
+import Where from './composant/where';
+import Pub1 from './composant/pub1';
+import Pub2 from './composant/pub2';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View>
+      <Plan1/>
+      <ScrollView>
+        <Plan_service/>
+        <Where/>
+        <Pub1/>
+        <Pub1/>
+        <Pub2/>
+      </ScrollView>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
