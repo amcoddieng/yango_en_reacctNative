@@ -1,8 +1,8 @@
 
 export const profil = {
     prenom: "Amadou",
-    nom: "Dient",
-    numero: "123456789"
+    nom: "Dieng",
+    numero: "76 020 58 50"
 };
 export const menuItems1 = [
     { id: 1, title: "payment method", icon: "credit-card", details: "Cash", nav:"Historique" },
@@ -23,9 +23,9 @@ export const menuItems4 = [
 ];
 
 export const Historique = [
-    { id: 1, lieu: "Dakar", rue: "Yoff, almadies, ...nt, DAKAR REGION", minute: "23 min" },
-    { id: 2, lieu: "Dakar", rue: "Yoff, almadies, ...nt, DAKAR REGION", minute: "15 min" },
-    { id: 3, lieu: "Dakar", rue: "Yoff, almadies, ...nt, DAKAR REGION", minute: "30 min" },
+    { id: 1, lieu: "diourbel", rue: "Yoff, almadies, ...nt, DAKAR REGION", minute: "50 min" },
+    { id: 2, lieu: "kaolack", rue: "Yoff, almadies, ...nt, DAKAR REGION", minute: "15 min" },
+    { id: 3, lieu: "thies", rue: "Yoff, almadies, ...nt, DAKAR REGION", minute: "30 min" },
     { id: 4, lieu: "Dakar", rue: "Yoff, almadies, ...nt, DAKAR REGION", minute: "10 min" },
     { id: 5, lieu: "Dakar", rue: "Yoff, almadies, ...nt, DAKAR REGION", minute: "5 min" },
 ];

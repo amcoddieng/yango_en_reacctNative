@@ -49,7 +49,7 @@ export const styles = StyleSheet.create({
     },    
     serviceImage1: {
         width: 160,
-        height: 170,
+        height: 185,
         borderRadius: 6,
         marginRight: 12,
     },

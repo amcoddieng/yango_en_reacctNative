@@ -7,16 +7,16 @@ type ItemmenuProps = {
   title: string;
   details?: string;
   icon: string;
-  nav: string; // le nom de l’écran où naviguer
+  nav: string;
 };
 
 export default function Itemmenu({ title, details, icon, nav }: ItemmenuProps) {
-  const navigation = useNavigation(); // ✅ à mettre ici (dans le composant)
+  const navigation = useNavigation(); 
 
   return (
     <TouchableOpacity
       style={styles.item}
-      onPress={() => navigation.navigate("Historique")} // ✅ on passe une chaîne, pas {nav}
+      onPress={() => navigation.navigate("Historique")} 
     >
       <Feather name={icon} size={30} color="black" />
       <View>
