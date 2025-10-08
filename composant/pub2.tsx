@@ -1,5 +1,5 @@
 import { ImageBackground, StyleSheet, View } from "react-native";
-
+import { styles } from "./style/stylepub2";
 export default function Pub2() {
   return (
     <View style={styles.containerPub2}>
@@ -25,26 +25,26 @@ export default function Pub2() {
   );
 }
 
-const styles = StyleSheet.create({
-  containerPub2: {
-    flexDirection: "row",
-    padding: 10,
-    gap: 10,
-    marginBottom:150
-  },
-  containerPub2_1: {
-    flex: 1, // ✅ prend tout l’espace restant
-    justifyContent: "space-between",
-  },
-  pub2: {
-    height: 195,
-    borderRadius: 20,
-    // width:1,
-    overflow: "hidden",
-  },
-  pub3: {
-    flex: 1, // ✅ prend la même hauteur que la colonne de droite
-    borderRadius: 20,
-    // overflow: "hidden",
-  },
-});
+// const styles = StyleSheet.create({
+//   containerPub2: {
+//     flexDirection: "row",
+//     padding: 10,
+//     gap: 10,
+//     marginBottom:150
+//   },
+//   containerPub2_1: {
+//     flex: 1, // ✅ prend tout l’espace restant
+//     justifyContent: "space-between",
+//   },
+//   pub2: {
+//     height: 195,
+//     borderRadius: 20,
+//     // width:1,
+//     overflow: "hidden",
+//   },
+//   pub3: {
+//     flex: 1, // ✅ prend la même hauteur que la colonne de droite
+//     borderRadius: 20,
+//     // overflow: "hidden",
+//   },
+// });
