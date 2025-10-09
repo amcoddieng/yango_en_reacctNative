@@ -1,47 +1,33 @@
-import { StyleSheet, Text, Image, View, TouchableOpacity } from 'react-native';
+import React, { useState } from 'react';
+import { Image, Text, View, TouchableOpacity } from 'react-native';
 import AntDesign from '@expo/vector-icons/AntDesign';
-import { useNavigation } from '@react-navigation/native';
 import { Feather } from '@expo/vector-icons';
 import { styles } from './style/styleplan1';
+import ModalPosition from './modalPosition';
+import { useNavigation } from '@react-navigation/native';
 
-export default function plan1() {
-  const navigation = useNavigation(); // hook pour navigation
-
+export default function Plan1() {
+  const [visible, setVisible] = useState(false);
+  const navigation = useNavigation(); 
   return (
     <View>
       <View style={styles.plan1}>
         <View>
           <Image source={require('../assets/Yango1.png')} style={styles.logo1} />
-          <View style={styles.viewplan}>
-            <Text>Mermoz-Sacre Coeur</Text>
-            <Feather name="chevron-right" size={20} color="black" />           
-          </View> 
 
+          <TouchableOpacity style={styles.viewplan} onPress={() => setVisible(true)}>
+            {/* <AntDesign name="enviromento" size={20} color="black" /> */}
+            <Text>Ma position</Text>
+            <Feather name="chevron-right" size={20} color="black" />
+          </TouchableOpacity>
         </View>
-        <TouchableOpacity style={styles.icone} onPress={() => navigation.navigate('Menu')}>
+
+        <TouchableOpacity style={styles.icone}  onPress={() => navigation.navigate("Menu" as never)}>
           <AntDesign name="menu" size={24} color="black" />
         </TouchableOpacity>
       </View>
+
+      <ModalPosition visible={visible} onClose={() => setVisible(false)} />
     </View>
   );
 }
-
-// const styles = StyleSheet.create({
-//   logo1: {
-//     width: 122,
-//     height: 40,
-//     borderRadius: 6,
-//   },
-//   plan1: {
-//     width: '100%',
-//     borderRadius: 6,
-//     padding: 16,
-//     marginTop: 30,
-//     flexDirection: 'row',
-//     alignItems: 'center',
-//     justifyContent: 'space-between',
-//   },
-//   icone: {
-//     padding: 8,
-//   },
-// });

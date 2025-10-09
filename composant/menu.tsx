@@ -13,13 +13,13 @@ export default function Menu(){
                 <View style={styles.view1}>
                     {/* afficher les éléments du menu ici */}
                     {menuItems1.map(item => (
-                        <Itemmenu key={item.id} title={item.title} details={item.details} icon={item.icon} />
+                        <Itemmenu nav={item.nav} key={item.id} title={item.title} details={item.details} icon={item.icon} />
                     ))}
                 </View>
                 <View>
                     {/*affichons les element du menu item3 : on le parcourt */}
                     {menuItems3.map(item => (
-                        <Itemmenu key={item.id} title={item.title} details={item.details} icon={item.icon} />
+                        <Itemmenu nav={item.nav} key={item.id} title={item.title} details={item.details} icon={item.icon} />
                     ))}
                 </View>
                 {/*ligne de séparation */}
@@ -31,14 +31,14 @@ export default function Menu(){
                 <View>
                         {/*affichons les element du menu item4 : on le parcourt  */}
                     {menuItems4.map(item => (
-                        <Itemmenu key={item.id} title={item.title} details={item.details} icon={item.icon} />
+                        <Itemmenu nav={item.nav} key={item.id} title={item.title} details={item.details} icon={item.icon} />
                     ))}
                 </View>    
                 <View>
                 <View style={{borderBottomWidth:0, borderBottomColor:"#ccc", marginVertical:10}}></View>
                         {/*affichons les element du menu item4 : on le parcourt  */}
                     {menuItems2.map(item => (
-                        <Itemmenu key={item.id} title={item.title} details={item.details} icon={item.icon} />
+                        <Itemmenu nav={item.nav} key={item.id} title={item.title} details={item.details} icon={item.icon} />
                     ))}
                 </View> 
             </ScrollView>

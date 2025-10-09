@@ -16,9 +16,9 @@ export default function Itemmenu({ title, details, icon, nav }: ItemmenuProps) {
   return (
     <TouchableOpacity
       style={styles.item}
-      onPress={() => navigation.navigate("Historique")} 
+      onPress={() => navigation.navigate(nav as never)} 
     >
-      <Feather name={icon} size={30} color="black" />
+      <Feather name="database" size={30} color="black" />
       <View>
         <Text style={styles.text}>{title}</Text>
         {details && <Text>{details}</Text>}

@@ -12,6 +12,7 @@ export const styles = StyleSheet.create({
   },
   containerLocation:{
     padding:10,
+    paddingTop:30,
     width:"85%",
     borderBottomWidth: 1,        // largeur de la bordure
     borderBottomColor: 'grey',  // couleur de la bordure

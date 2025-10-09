@@ -3,7 +3,6 @@ export const styles = StyleSheet.create({
     containerItem:{
         padding:15,
         width:"100%",
-        // marginBottom:100,
     },
     view1:{
         marginBottom:10,
